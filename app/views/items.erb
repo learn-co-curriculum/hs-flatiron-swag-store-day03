@@ -1,7 +1,7 @@
 <h2>Items</h2>
 <% @items.each do |item| %>
   <img src="<%= item.image_url %>">
-  <h3><a href="/items/<%= item.id %>"><%= item.name %></a></h3>
+  <h3><%= item.name %></h3>
   <p><strong>Price:</strong> $<%= item.price %></p>
 <% end %>
 

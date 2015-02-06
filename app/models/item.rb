@@ -1,6 +1,7 @@
 require './config/environment'
+require './app/models/item'
 
 class Item < ActiveRecord::Base
-  has_many :purchases
+
 
 end
