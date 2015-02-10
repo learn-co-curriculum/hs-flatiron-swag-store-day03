@@ -17,9 +17,9 @@ If you haven't already started setting up your own Flatiron Swag Shop app first 
 
 **Step 3** - Set up your config.ru file.
 
-**Step 4** - Set up a config directory and an environment.rb file - don't forget your sql database connection! (Hint: It's totally okay to copy the environment.rb file from your Fwitter project.)
+**Step 4** - Set up a config directory and an environment.rb file - **don't forget your SQL database connection!** (Hint: It's totally okay to copy the environment.rb file from your Fwitter project.)
 
-**Step 5** - Set up your Gemfile with all of your gems - don't forget ActiveRecord and sqlite3 (totally okay to copy from Fwitter again!)
+**Step 5** - Set up your Gemfile with all of your gems - don't forget activerecord and sqlite3 (totally okay to copy from Fwitter again!)
 
 **Step 6** - Set up your Rakefile (copy that Fwitter!)
 
@@ -34,7 +34,7 @@ If you haven't already started setting up your own Flatiron Swag Shop app first 
 
 Create an `item.rb` file with an Item class - **don't forget to inherit from ActiveRecord::Base**. If you already created `item.rb` last week make sure to delete (or comment out) everything inside of the Item class - you don't need it and it might conflict with ActiveRecord.
 
-**Step 8** - Create a migration for the items table `rake db:create_migration NAME="create_items"` and get in there to set up your `up` and `down` methods. (Look at your Fwitter migrations!). Don't forget to run your migration with `rake db:migrate` when you are done! 
+**Step 8** - Create a migration for the items table `rake db:create_migration NAME="create_items"` and get in there to set up your `up` and `down` methods. (Look at your Fwitter migration!). Don't forget to run your migration with `rake db:migrate` when you are done! 
 
 **Step 9** - Let's add some items to our database! Boot up `tux` in your terminal and create some new items. Here are some image links that you can use:
 
