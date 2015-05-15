@@ -1,10 +1,3 @@
----
-tags: forms, active record, databases, kids, ruby, advanced, challenges
-language: ruby
-level: 3
-type: challenges
----
-
 ## Flatiron Swag Shop!
 
 If you haven't already started setting up your own Flatiron Swag Shop app first watch this [video](https://docs.google.com/a/flatironschool.com/file/d/0B_qWLnYbXOdPS2tMbHVpOG1GUVE/edit) then follow the steps below to get started.
