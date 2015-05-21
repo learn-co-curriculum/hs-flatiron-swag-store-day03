@@ -1,14 +1,5 @@
 ## Flatiron Swag Shop!
-
-If you haven't already started setting up your own Flatiron Swag Shop app first watch this [video](https://docs.google.com/a/flatironschool.com/file/d/0B_qWLnYbXOdPS2tMbHVpOG1GUVE/edit) then follow the steps below to get started.
-
-**If you already got started last week you can skip to step 4**
-
-**Step 1** - Set up your app and MVC directories.
-
-**Step 2** - Set up your public directory with directories for css, img and js.
-
-**Step 3** - Set up your config.ru file.
+Let's get a database set up to store our items!
 
 **Step 4** - Set up a config directory and an environment.rb file - **don't forget your SQL database connection!** (Hint: It's totally okay to copy the environment.rb file from your Fwitter project.)
 
@@ -16,18 +7,16 @@ If you haven't already started setting up your own Flatiron Swag Shop app first 
 
 **Step 6** - Set up your Rakefile (copy that Fwitter!)
 
-**Step 7** - Now for the MVC. We're going to start with one model/table for Items with the following attributes/columns:
+**Step 7** - Now we need to modify our Item class that inherits from ActiveRecord::Base
 
-```ruby
+**Step 8** - Create a migration for the items table `rake db:create_migration NAME="create_items"` and get in there to set up your `up` and `down` methods. (Look at your Fwitter migration!). Don't forget to run your migration with `rake db:migrate` when you are done! The items table should include columns for:
+
+``ruby
 :name
 :image_url 
 :price
 :count
 ```
-
-Create an `item.rb` file with an Item class - **don't forget to inherit from ActiveRecord::Base**. If you already created `item.rb` last week make sure to delete (or comment out) everything inside of the Item class - you don't need it and it might conflict with ActiveRecord.
-
-**Step 8** - Create a migration for the items table `rake db:create_migration NAME="create_items"` and get in there to set up your `up` and `down` methods. (Look at your Fwitter migration!). Don't forget to run your migration with `rake db:migrate` when you are done! 
 
 **Step 9** - Let's add some items to our database! Boot up `tux` in your terminal and create some new items. Here are some image links that you can use:
 
@@ -39,9 +28,7 @@ Create an `item.rb` file with an Item class - **don't forget to inherit from Act
 
 You can set your own price and decide the count that you have in stock.
 
-**Step 10** - We've got the M covered, now let's move onto the V. In your views directory create an `items.erb` file that will display all of the merch for our store - including each item's name, photo and price.
-
-**Step 11** - Set up your `get '/items'` route to pull all of your items from the database and display them in your new `items.erb` template.
+**Step 10** -  You'll want to modify your controller action for `/items` route. You shouldn't be creating items in that route, instead you want to create an instance variable that stores all the items in the database.
 
 Take a look at that swag!
 
