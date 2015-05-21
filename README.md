@@ -1,15 +1,15 @@
 ## Flatiron Swag Shop!
 Let's get a database set up to store our items!
 
-**Step 4** - Set up a config directory and an environment.rb file - **don't forget your SQL database connection!** (Hint: It's totally okay to copy the environment.rb file from your Fwitter project.)
+**Step 1** - Set up a config directory and an environment.rb file - **don't forget your SQL database connection!** (Hint: It's totally okay to copy the environment.rb file from your Fwitter project.)
 
-**Step 5** - Set up your Gemfile with all of your gems - don't forget activerecord and sqlite3 (totally okay to copy from Fwitter again!)
+**Step 2** - Set up your Gemfile with all of your gems - don't forget activerecord and sqlite3 (totally okay to copy from Fwitter again!)
 
-**Step 6** - Set up your Rakefile (copy that Fwitter!)
+**Step 3** - Set up your Rakefile (copy that Fwitter!)
 
-**Step 7** - Now we need to modify our Item class that inherits from ActiveRecord::Base
+**Step 4** - Now we need to modify our Item class that inherits from ActiveRecord::Base
 
-**Step 8** - Create a migration for the items table `rake db:create_migration NAME="create_items"` and get in there to set up your `up` and `down` methods. (Look at your Fwitter migration!). Don't forget to run your migration with `rake db:migrate` when you are done! The items table should include columns for:
+**Step 5** - Create a migration for the items table `rake db:create_migration NAME="create_items"` and get in there to set up your `up` and `down` methods. (Look at your Fwitter migration!). Don't forget to run your migration with `rake db:migrate` when you are done! The items table should include columns for:
 
 ``ruby
 :name
@@ -18,7 +18,7 @@ Let's get a database set up to store our items!
 :count
 ```
 
-**Step 9** - Let's add some items to our database! Boot up `tux` in your terminal and create some new items. Here are some image links that you can use:
+**Step 6** - Let's add some items to our database! Boot up `tux` in your terminal and create some new items. Here are some image links that you can use:
 
 + [hat](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_hat.jpg)
 + [hoodie](https://s3.amazonaws.com/after-school-assets/flatiron-swag-store-lab/flatiron_hoodie.jpg)
@@ -28,7 +28,7 @@ Let's get a database set up to store our items!
 
 You can set your own price and decide the count that you have in stock.
 
-**Step 10** -  You'll want to modify your controller action for `/items` route. You shouldn't be creating items in that route, instead you want to create an instance variable that stores all the items in the database.
+**Step 7** -  You'll want to modify your controller action for `/items` route. You shouldn't be creating items in that route, instead you want to create an instance variable that stores all the items in the database.
 
 Take a look at that swag!
 
