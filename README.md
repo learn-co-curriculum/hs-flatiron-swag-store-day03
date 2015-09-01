@@ -11,7 +11,7 @@ Let's get a database set up to store our items!
 
 **Step 5** - Create a migration for the items table `rake db:create_migration NAME="create_items"` and get in there to set up your `up` and `down` methods. (Look at your Fwitter migration!). Don't forget to run your migration with `rake db:migrate` when you are done! The items table should include columns for:
 
-``ruby
+```ruby
 :name
 :image_url 
 :price
