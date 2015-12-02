@@ -40,3 +40,5 @@ Take a look at that swag!
 + Set up a form on your inventory page that lets you increase the inventory for any item.
   * When the form is submitted, the items' inventory (count) should increase.
 
+
+<a href='https://learn.co/lessons/hs-flatiron-swag-store-day03' data-visibility='hidden'>View this lesson on Learn.co</a>
