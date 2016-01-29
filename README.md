@@ -41,4 +41,4 @@ Take a look at that swag!
   * When the form is submitted, the items' inventory (count) should increase.
 
 
-<a href='https://learn.co/lessons/hs-flatiron-swag-store-day03' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/hs-flatiron-swag-store-day03' title='Flatiron Swag Shop!'>Flatiron Swag Shop!</a> on Learn.co and start learning to code for free.</p>
